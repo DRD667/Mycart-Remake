@@ -25,9 +25,6 @@ header > * {
   color: white;
 }
 
-img {
-  max-width: 100%;
-}
 input {
   width: 40vmin;
   color: grey;
@@ -49,12 +46,10 @@ input:hover {
 
 .products {
   display: flex;
-  width: 100%;
-  object-fit: fill;
   justify-content: space-around;
   background-color: white;
-  padding: 1rem 0;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+  align-items: center;
 }
 
 .slide::before {
@@ -79,33 +74,22 @@ input:hover {
   display: block;
 }
 
-.shirts {
-  display: flex;
-}
-.shirts img:hover {
-  border: 2px solid skyblue;
-}
-
-.shirts img {
-  width: 45%;
-}
-
-h2 {
+.banner {
   font-size: 3vw;
   color: white;
   text-align: center;
   background-color: skyblue;
   transition: 0.3s;
 }
-h2:hover {
+.banner:hover {
   background-color: rgb(97, 46, 37);
 }
 
-h2 p {
+.banner p {
   font-size: 1.2rem;
 }
 
-h2:hover p {
+.banner:hover p {
   color: yellow;
   font-size: 1.2rem;
 }
@@ -117,6 +101,10 @@ h2:hover p {
 
 .full img {
   width: 100vw;
+}
+
+.banner ~ div {
+  margin: 2rem auto;
 }
 .slide {
   width: 100vmin;

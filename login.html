@@ -13,40 +13,66 @@
 
       body {
         background-color: skyblue;
+        font-family: Poppins;
       }
       form {
         margin: auto;
         margin-top: 7%;
         padding: 5%;
         text-align: center;
-        border: 2px solid grey;
         background-color: white;
-        width: 65vw;
-        box-shadow: 2px 2px 5px 2px black;
+        width: 65vmin;
+        margin: inherit auto;
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.05),
+          4px 4px 4px 0 rgba(0, 0, 0, 0.3);
+      }
+
+      form:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        height: 30vh;
+        width: 100vw;
+        background-color: rgba(255, 251, 251, 0.617);
+        z-index: -10;
       }
 
       form input {
         margin-top: 2%;
         width: 90%;
         height: 5vh;
+        padding: 1.5em;
+      }
+
+      input:focus {
+        border: 2px solid skyblue;
+        outline: none;
       }
       form h1 {
         color: skyblue;
         margin-bottom: 5%;
       }
       button {
-        background-color: skyblue;
+        background-color: rgb(192, 135, 235);
+        color: white;
+        font-weight: bold;
+        font-size: 1.2em;
         margin: 5%;
-        width: 25%;
-        height: 5vh;
-        border-radius: 3vw;
+        text-align: center;
+        padding: 0.8em 1.6em;
+        border: none;
+        border-radius: 50px;
       }
       form button:hover {
         background-color: tomato;
+        cursor: pointer;
       }
 
       h4 {
-        color: skyblue;
+        color: rgb(192, 135, 235);
+        cursor: pointer;
+        text-decoration: underline;
       }
       p {
         color: green;
@@ -62,6 +88,7 @@
         border: 2px solid gray;
         background-color: white;
         padding: 0.5em 1em;
+        color: blue;
         display: inline-block;
       }
 
@@ -69,7 +96,14 @@
         font-family: Poppins;
         text-decoration: none;
         font-weight: bold;
-        color: blue;
+      }
+
+      .home:hover {
+        background-color: brown;
+      }
+
+      .home:hover a {
+        color: white;
       }
     </style>
   </head>
@@ -78,7 +112,7 @@
       <a href="index.html">Back</a>
     </div>
     <form>
-      <h1>Login to Your Account</h1>
+      <h1>Log in to Your Account</h1>
 
       <input type=" text" placeholder="Username" />
       <br /><br />
