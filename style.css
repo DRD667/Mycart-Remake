@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+header > * {
+  padding: 0.2rem 1rem;
+}
+.containterup {
+  background-color: skyblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.containterup > h1 {
+  color: white;
+}
+
+img {
+  max-width: 100%;
+}
+input {
+  width: 40vmin;
+  color: grey;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  transition: 0.2s ease-in;
+}
+@media (min-width: 900px) {
+  input:focus {
+    width: 60vmin;
+  }
+}
+
+input:hover {
+  border: 1% solid black;
+}
+
+.products {
+  display: flex;
+  width: 100%;
+  object-fit: fill;
+  justify-content: space-around;
+  background-color: white;
+  padding: 1rem 0;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.slide::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  height: 30vh;
+  width: 200vw;
+  background-color: rgba(231, 217, 217, 0.617);
+  z-index: -10;
+}
+.products img {
+  width: 5%;
+}
+
+.products img:hover {
+  border: 2px solid skyblue;
+}
+
+.products > * {
+  display: block;
+}
+
+.shirts {
+  display: flex;
+}
+.shirts img:hover {
+  border: 2px solid skyblue;
+}
+
+.shirts img {
+  width: 45%;
+}
+
+h2 {
+  font-size: 3vw;
+  color: white;
+  text-align: center;
+  background-color: skyblue;
+  transition: 0.3s;
+}
+h2:hover {
+  background-color: rgb(97, 46, 37);
+}
+
+h2 p {
+  font-size: 1.2rem;
+}
+
+h2:hover p {
+  color: yellow;
+  font-size: 1.2rem;
+}
+
+.flex > * {
+  width: 15%;
+  flex-grow: 1;
+}
+
+.full img {
+  width: 100vw;
+}
+.slide {
+  width: 100vmin;
+  height: calc(9 / 16 * 100vmin);
+  animation: slides 25s infinite alternate;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 0 auto;
+  max-height: 70vh;
+  background-image: url(./images/ferrari.jpg);
+  animation-delay: 3s;
+}
+
+@keyframes slides {
+  20% {
+    background-image: url(./images/smartwarch.png);
+  }
+
+  40% {
+    background-image: url(./images/photo-1572536147248-ac59a8abfa4b.jpeg);
+  }
+  60% {
+    background-image: url(./images/wp6360154-headphones-music-wallpapers.jpg);
+  }
+  80% {
+    background-image: url(./images/how-credit-cards-enhance-your-shopping-experience.jpg);
+  }
+  100% {
+    background-image: url(./images/smartwarch.png);
+  }
+}
+h3 {
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+h2 p {
+  color: green;
+  text-align: center;
+}
+h4 {
+  color: grey;
+  text-align: center;
+  font-size: 5vw;
+  margin: 3em 0;
+}
+
+a {
+  text-decoration: none;
+  padding: 1em 2em;
+  text-align: center;
+  outline: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border: none;
+  margin: 0 auto;
+  background-color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 50px;
+}
+
+a:hover {
+  background-color: rgb(97, 46, 37);
+  transition: 0.3s;
+  color: white;
+}
+
+body {
+  font-family: Poppins;
+  overflow-x: hidden;
+}
+
+main {
+  margin-top: 15vmax;
+}
+
+.flex {
+  width: 90vw;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin: 1em auto;
+}
+
+.flex > * {
+  flex-grow: 1;
+}
+
+.flex > *:hover {
+  outline: 2px solid skyblue;
+}
+
+.banner {
+  padding: 1rem 0;
+  outline: 20px solid white;
+}
+
+footer {
+  background-color: skyblue;
+  height: 50vh;
+  color: white;
+  font-size: 3em;
+  display: grid;
+  place-content: center;
+}
+
+a.header-login {
+  font-size: 0.8em;
+}
+
+.containterup > div {
+  display: flex;
+  gap: 10px;
+}
